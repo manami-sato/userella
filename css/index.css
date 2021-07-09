@@ -1,0 +1,282 @@
+/* 全体ここまで */
+body{
+	text-align: center;
+	background:#F5F5F5;
+}
+/* 全体ここまで */
+
+/* indexImgここから */
+.indexImg>section{
+	background:url("../img/header.png");
+	background-size:100% auto;
+	background-repeat: no-repeat;
+	margin-top:70px;
+	height:750px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h2 img{
+	width:500px;
+	margin-top:20px;
+}
+h2{
+	font-size:1.2em;
+	letter-spacing: 0.2em;
+	background:rgba(255,255,255,0.5);
+	padding:50px 100px;
+	display: inline-block;
+	text-align: center;
+}
+h2 span{
+	display: block;
+}
+/* headerここまで */
+
+/* boxここから */
+h3{
+	font-size:1.7em;
+	margin-bottom:50px;
+	position: relative;
+}
+.h3_white::after,
+.h3_green::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+}
+.h3_white::after {
+	background-color: #fdfdfdb0;
+}
+.h3_green::after {
+	background-color: #ACC9AC;
+}
+/* boxここまで */
+
+
+/* -------------------
+what's userella?
+------------------- */
+.box_ttl{
+	font-family: 'Josefin Sans', sans-serif;
+}
+.green{
+	color:#ACC9AC;
+}
+.blue{
+	color:#9FBAB9;
+}
+.outline{
+	background:url("../img/back_circle.png") no-repeat center center;
+	margin:0 auto;
+	padding:140px 0;
+}
+h4{
+	font-size:2em;
+	margin-bottom:40px;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.16);
+}
+
+h5+p{
+	line-height:30px;
+}
+.useBox{
+	margin:0 auto;
+}
+.use{
+	display:flex;
+	justify-content: space-between;
+	margin:70px auto;
+	width:950px;
+	text-align: left;
+	opacity: 0;
+	transition: 1s;
+}
+.useL{
+	transform:translateX(-100px);
+}
+.useR{
+	transform:translateX(100px);
+}
+.useFadein{
+	transform:translateX(0);
+	opacity:1;
+}
+.useText{
+	margin: auto 0;
+	font-size:1.1em;
+}
+.useImage{
+	height: 300px;
+}
+.useImage img{
+	height: 300px;
+}
+.useImage:nth-of-type(2n){
+	box-shadow: 25px 25px 0px #D9E3E3;
+}
+.useImage:nth-of-type(2n+1){
+	box-shadow: -25px 25px 0px #DEE9DE;
+}
+
+.box:nth-of-type(2n){
+	color:#fff;
+}
+
+
+
+.box2{
+	background:#ACC9AC;
+}
+.box2 li{
+	color:#fff;
+}
+.box4{
+	background:#9FBAB9;
+}
+
+
+/* -------------------
+userellaの流れ
+------------------- */
+.flowBox{
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	width: 70vw;
+	max-width: 1100px;
+	margin:50px auto 0;
+}
+.flow{
+	position: relative;
+	transform:translateY(50px);
+	opacity: 0;
+	transition: 1s;
+	margin-top: 60px;
+	width: 250px;
+}
+.flowFadein{
+	transform:translateY(0);
+	opacity: 1;
+}
+.imgC{
+	width: 200px;
+	height:200px;
+	border-radius: 50%;
+	background:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.16);
+	margin:0 auto;
+}
+.number{
+	font-size:5em;
+	font-weight: bold;
+	position: absolute;
+	top:-10px;
+	left:10px;
+	color: #ffc83c;
+}
+.listTitle{
+	margin:30px 0 20px;
+	font-weight: bold;
+	font-size:1.5em;
+}
+
+
+/* -------------------
+企業
+------------------- */
+.companyList{
+	margin:70px 0;
+}
+.companyList img{
+	margin-right:100px;
+	/* width:200px; */
+}
+.companyList img:last-child{
+	margin:0;
+}
+
+
+
+/* -------------------
+よくある質問
+------------------- */
+.question{
+	padding:0 30px;
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	background:#fff;
+	color:#707070;
+	width:50vw;
+	min-width: 200px;
+	margin:0 auto 25px;
+	font-weight: bold;
+	text-align: left;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.16);
+	border-radius: 20px;
+	height:80px;
+}
+.qHeader{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	line-height: 80px;
+	position: relative;
+}
+
+.question:last-child{
+	margin-bottom:0;
+}
+.answer{
+	background:#C3C3C3;
+	padding:25px 20px;
+	color:#fff;
+	font-weight: normal;
+	border-radius: 5px;
+	pointer-events: none;
+}
+
+.btn{
+	width: 15px;
+	height: 15px;
+	transform:rotateZ(45deg);
+	margin:10px 0 0 10px;
+	position:absolute;
+	right:0;
+	top:18px;
+	border-bottom :3px solid #666;
+	border-right :3px solid #666;
+}
+.btnAdd{
+	border-bottom :none;
+	border-right :none;
+	border-left :3px solid #666;
+	border-top:3px solid #666;
+}
+
+.box4>.btn_y{
+	position: relative;
+	z-index: 5;
+}
+
+
+
+
+/* -------------------
+アプリ
+------------------- */
+.box5 img{
+	width: 700px;
+}

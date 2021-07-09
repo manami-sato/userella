@@ -1,0 +1,35 @@
+.q2{
+	font-weight: bold;
+}
+.q3{
+	color:#699695;
+	font-size:1.2em;
+}
+.a2{
+	background:#F5F5F5;
+	border-radius: 20px;
+	margin:20px 0 30px;
+	padding:20px 30px;
+}
+
+.btnTxt{
+	text-align: center;
+	margin:70px 0 20px;
+	font-size:0.9em;
+}
+
+.btn_y:link{
+	margin-top:0;
+}
+
+.ttl{
+	padding-top:100px;
+}
+
+.box{
+	padding: 0 0 120px;
+}
+
+section .a2:last-child{
+	margin-bottom: 0;
+}

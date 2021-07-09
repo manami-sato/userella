@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="忘れられた傘を必要な人の元へ">
+	<title>お問い合わせ｜userella（ユースレラ）</title>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@twitteraccount">
+	<meta property="og:site_name" content="userella（ユースレラ）">
+	<meta property="og:title" content="お問い合わせ">
+	<meta property="og:description" content="忘れられた傘を必要な人の元へ">
+	<meta property="og:url" content="#">
+	<meta property="og:image" content="img/favicon.png">
+	<meta property="og:type" content="website">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/vnd.microsoft.icon">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/ress.css">
+	<link rel="stylesheet" href="css/temp.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<div class="headerBox">
+			<h1>
+				<a href="index.html"><img src="img/logo.png" alt="userella"></a>
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="about.html" target="page">userellaについて</a></li>
+					<li><a href="question.html" target="page">よくある質問</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+					<li><a href="app.html" target="page">アプリをダウンロード</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="breadcrumbList">
+		<div>
+			<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+				<!-- 1つめ -->
+				<li itemprop="itemListElement" itemscope
+						itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="index.html">
+							<span itemprop="name">Home</span>
+					</a>
+					<meta itemprop="position" content="1" />
+				</li>
+			</ol>
+			<span>お問い合わせ</span>
+		</div>
+	</div>
+
+
+	<div class="pageHBox">
+		<div class="pageHeader">
+			<h2>お問い合わせ</h2>
+		</div>
+	</div>
+	<section class="box">
+			<h3 class="ttl">お問い合わせフォーム</h3>
+			<p>お問い合わせいただきました内容は全て確認させていただいておりますが、返信にお時間を頂く場合がございます。</p>
+		<form>
+			<table>
+				<tr>
+					<th>
+						<div>
+							法人・個人
+							<div class="required">必須</div>
+						</div>
+					</th>
+					<td class="formLeft">
+						<input type="radio" name="type" value="corporation">法人
+						<input type="radio" checked="checked" name="type" value="private">個人
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<div>
+							社名または氏名
+							<div class="required">必須</div>
+						</div>
+					</th>
+					<td><input type="text" name="name" placeholder="例：ジャニーズ事務所" class="inputTxt"></td>
+				</tr>
+				<tr>
+					<th>
+						<div>
+							電話番号
+							<div class="required">必須</div>
+						</div>
+					</th>
+					<td><input type="tel" name="name" placeholder="例：090-1896-3799" class="inputTxt"></td>
+				</tr>
+				<tr>
+					<th>
+						<div>
+							メールアドレス
+							<div class="required">必須</div>
+						</div>
+					</th>
+					<td><input type="email" name="email" placeholder="例：example@examlpe.jp" class="inputTxt"></td>
+				</tr>
+				<tr>
+					<th class="addressTh">
+						<div>
+							住所
+						</div>
+					</th>
+					<td class="addressTd">
+						<div>
+							<p>〒</p>
+							<input type="text" name="postalCode" placeholder="例：107-0052" class="inputTxt">
+						</div>
+						<input type="text" name="address" placeholder="例：東京都港区赤坂9-6-35" class="inputTxt">
+					</td>
+				</tr>
+				<tr>
+					<th class="content">
+						<div>
+							お問い合わせ内容
+							<div class="required">必須</div>
+						</div>
+					</th>
+					<td class="content">
+						<textarea></textarea>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" name="send" class="btn_y" value="送信する">
+		</form>
+	</section>
+
+	<footer>
+		<small>&copy; userella,Inc.</small>
+	</footer>
+	<script src="js/js.js"></script>
+</body>
+</html>
